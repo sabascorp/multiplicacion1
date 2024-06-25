@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiplicacion A1</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="title-container">
+      <img src="imagenes/eca.png" class="logo-izquierda" alt="Logo Izquierda">
+      <h1>Multiplicacion A1</h1>
+      <img src="imagenes/globalgoals.png" class="logo-derecha" alt="Logo Derecha">
+    </div>
+    <div class="description-container">
+      <p>En esta práctica, deberás calcular la tabla de multiplicar de números aleatorios del 0 al 10. ¡Buena suerte!</p>
+    </div>
+    <div id="nameInputContainer" class="name-input-container">
+      <input type="text" id="userNameInput" placeholder="Ingrese su nombre">
+      <button id="submitNameButton" class="start-button">Enviar</button>
+      <div id="dbStatus"></div>
+    </div>
+    <div id="practiceContainer" class="hidden">
+      <div class="multiplication-container">
+        <div id="multiplication" class="multiplication"></div>
+        <br> <br>
+        </div>
+      <input type="text" id="answer" class="answer" placeholder="Ingrese su respuesta" disabled>
+      <div id="countdown" class="countdown"></div>
+      <button id="startButton" class="start-button" disabled>Iniciar</button>
+      <button id="resetButton" class="reset-button">Reiniciar</button>
+      <div class="progress-container">
+        <div id="progressBar" class="progress-bar"></div>
+      </div>
+      <div id="result" class="result"></div>
+    </div>
+    <table id="leaderboard" class="leaderboard hidden">
+      <caption id="leaderboardCaption">Tabla de Liderazgo</caption>
+      <thead>
+        <tr>
+          <th>FH</th>
+          <th>AC</th>
+          <th>ER</th>
+          <th>IN</th>
+          <th>TL</th>
+          <th>CF</th>
+        </tr>
+      </thead>
+      <tbody id="leaderboardBody"></tbody>
+    </table>
+  </div>
+</body>
+</html>
